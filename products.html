@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Liquor Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Productos Disponibles</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="cart.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                <li><a href="login.html">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="images/whisky.jpg" alt="Whisky Premium">
+            <h3>Whisky Premium</h3>
+            <p>Descripción breve del whisky premium.</p>
+            <p><strong>Precio: $50</strong></p>
+            <button onclick="addToCart('Whisky Premium', 50)">Agregar al carrito</button>
+        </div>
+
+        <div class="product-card">
+            <img src="images/rum.jpg" alt="Ron Añejo">
+            <h3>Ron Añejo</h3>
+            <p>Descripción breve del ron añejo.</p>
+            <p><strong>Precio: $30</strong></p>
+            <button onclick="addToCart('Ron Añejo', 30)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Liquor Store. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+    
